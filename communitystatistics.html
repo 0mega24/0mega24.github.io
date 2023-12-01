@@ -10,24 +10,49 @@
         body{
             background-color:rgba(207, 226, 243, 100);
         }
+
         img{
             display:block;
             margin-left:auto;
             margin-right:auto;
         }
+
+        h3{
+            text-align:center;
+        }
+
         .gridded{
             display: grid;
             grid-template-columns: [first] 25%  [last-line] 75%;
             grid-gap: 3% 5%;
-            border: 4px solid rgb(141, 198, 132);
         }
+
         p{
             display: inline-block;
         }
-        div{
-            display:block;
-            margin-left:auto;
-            margin-right:auto;
+        
+        .companies{
+            border: 4px solid rgb(141, 198, 132);
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+        }
+
+        .desc {
+            border: 4px solid rgb(141, 198, 132);
+        }
+
+        .filters {
+            border: 4px solid rgb(141, 198, 132);
+        }
+
+        .pic {
+            border: 4px solid rgb(141, 198, 132);
+        }
+
+        .company-drop-downs{
+            height:50%;
+            width:20%;
         }
 
     </style>
@@ -44,32 +69,32 @@
     </nav>
 
     <div class="gridded">
-        <div>
+        <div class="desc">
             <h3>Currently Showing 3 companies <br>In your closest vicinity</h3>
         </div>
 
-        <div>
-            <select> 
-            <option>Company A</option> 
-            <option>Company B</option> 
-            <option>Company C</option> 
-            <option>Your Company</option>
-        </select>
-        <select> 
-            <option>Company A</option> 
-            <option>Company B</option> 
-            <option>Company C</option> 
-            <option>Your Company</option> 
-        </select>
-        <select> 
-            <option>Company A</option> 
-            <option>Company B</option> 
-            <option>Company C</option> 
-            <option>Your Company</option>
-        </select>
+        <div class="companies">
+            <select class="company-drop-downs"> 
+                <option>Company A</option> 
+                <option>Company B</option> 
+                <option>Company C</option> 
+                <option>Your Company</option>
+            </select>
+            <select class="company-drop-downs"> 
+                <option>Company A</option> 
+                <option>Company B</option> 
+                <option>Company C</option> 
+                <option>Your Company</option> 
+            </select>
+            <select class="company-drop-downs"> 
+                <option>Company A</option> 
+                <option>Company B</option> 
+                <option>Company C</option> 
+                <option>Your Company</option>
+            </select>
         </div>
 
-        <div>
+        <div class="filters">
             <table>
                 <tr>
                     <th>How Many Companies?</th>
@@ -110,7 +135,9 @@
                 <option>Your Company</option>
             </select>
         </div>
-        <img src="images/carbon-emissions-graph.png">
+
+        <img class= "pic" src="images/carbon-emissions-graph.png">
+        
     </select>
     </div>
 </body>
