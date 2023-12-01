@@ -15,6 +15,21 @@
             margin-left:auto;
             margin-right:auto;
         }
+        .gridded{
+            display: grid;
+            grid-template-columns: [first] 25%  [last-line] 75%;
+            grid-gap: 3% 5%;
+            border: 4px solid rgb(141, 198, 132);
+        }
+        p{
+            display: inline-block;
+        }
+        div{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
     </style>
 </head>
 <body>
@@ -29,7 +44,10 @@
     </nav>
 
     <div class="gridded">
-        <h2>Currently Showing 3 companies <br>In your closest vicinity</h2>
+        <div>
+            <h3>Currently Showing 3 companies <br>In your closest vicinity</h3>
+        </div>
+
         <div>
             <select> 
             <option>Company A</option> 
@@ -76,6 +94,21 @@
                     </th>
                 </tr>
             </table>
+
+            <h2>Year Range</h2>
+            <select> 
+                <option>Company A</option> 
+                <option>Company B</option> 
+                <option>Company C</option> 
+                <option>Your Company</option>
+            </select>
+            <p>To</p>
+            <select> 
+                <option>Company A</option> 
+                <option>Company B</option> 
+                <option>Company C</option> 
+                <option>Your Company</option>
+            </select>
         </div>
         <img src="images/carbon-emissions-graph.png">
     </select>
